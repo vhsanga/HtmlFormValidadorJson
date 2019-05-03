@@ -1,5 +1,5 @@
 //esta funcion debe ser llamada desde un boton para ser proceder a validar el formulario 
-
+// sirve para validar input text, number, select, radio, checkbox, files, maxlength
 function(idFormHtml, validar = true) {
  	/* idFormHtml = id del formulario que desamos deserialziar
  	 *  todos los componentes que se desa deserializar debe tener un 'name' que sera el KEY del json
