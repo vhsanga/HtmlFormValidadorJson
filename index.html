@@ -1,0 +1,68 @@
+<link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="/assets/plugins/jquery/jquery.min.js"></script>
+
+<form id="formEjemplo" class="form-control-line">
+    <div class="form-group">
+        <label class="form-control-label">Default Text: </label>
+        <input id="files" type="text" name="nombre" required="true" requiredmessage="seecione un archivo" class="form-control _formJSON">
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">Default numero: </label>
+        <input type="number" name="edad" maxlength="5" class="form-control _formJSON" requiredmessage="El valor el campo 'edad' es demasiado largo, (máximo= 5)">
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">Default email: </label>
+        <input type="email" name="email" required="true" class="form-control _formJSON">
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">AREA TEXTO: </label>
+        <textarea name="comentario" required="true" onlytext="true" class="form-control _formJSON" requiredmessage="El campo 'comentario' solo acepta texto "></textarea>
+    </div>
+    <div class="form-group">
+        <div class="demo-checkbox">
+            <input id="primaria" type="checkbox" name="instruccion" value="primaria" required="true" class="_formJSON">
+            <label for="primaria" class="form-control-label">Primaria</label>
+            <input id="secundaria" type="checkbox" name="instruccion" value="secunadaria" required="true" class="_formJSON">
+            <label for="secundaria" class="form-control-label">Secundaria</label>
+        </div>
+    </div>
+    <hr>
+    <div class="form-group">
+        <div class="demo-checkbox">
+            <input id="arroz" type="checkbox" name="comida" value="arroz" class="_formJSON">
+            <label for="arroz">ARROZ</label>
+            <input id="sopa" type="checkbox" name="comida" value="sopa" class="_formJSON">
+            <label for="sopa">SOPA</label>
+            <input id="jugo" type="checkbox" name="comida" value="jugo" class="_formJSON">
+            <label for="jugo" class="_formJSON">JUGO</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="demo-radio-button">
+            <input id="hombre" name="sexo" type="radio" value="h" required="true" class="_formJSON">
+            <label for="hombre" class="form-control-label">Hombre</label>
+            <input id="mujer" name="sexo" type="radio" value="m" required="true" class="_formJSON">
+            <label for="mujer" class="form-control-label">Mujer</label>
+        </div>
+    </div>
+    <hr>
+    <div class="form-group">
+        <div class="demo-radio-button">
+            <input id="ra" name="raza" type="radio" value="blanca" class="_formJSON">
+            <label for="ra">blanca</label>
+            <input id="rn" name="raza" type="radio" value="negra" class="_formJSON">
+            <label for="rn">negra</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="form-control-label">Input Select</label>
+        <select name="selecion" required="true" class="form-control _formJSON">
+            <option value="">Selecione</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+</form>
